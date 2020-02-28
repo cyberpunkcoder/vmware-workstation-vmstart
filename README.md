@@ -5,6 +5,7 @@ Windows power mode switch window is opened so that power mode can be switched to
 
 Source commands in .bat file:
 
+```
 @echo off
 
 powercfg -s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
@@ -16,6 +17,7 @@ rem Set your VM location .vmx file on the next line.
 
 START vmware.exe -x "%HOMEPATH%\Documents\Virtual Machines\IDS\IDS.vmx"
 %windir%\system32\control.exe /name Microsoft.PowerOptions
+```
 
 IMPORTANT
 "%HOMEPATH%\Documents\Virtual Machines\IDS\IDS.vmx" MUST BE CHANGED TO YOUR VM LOCATION
